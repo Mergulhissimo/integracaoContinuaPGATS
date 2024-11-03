@@ -2,8 +2,12 @@
   "name": "cypress-pgats",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+"scripts": {
+    "lint" : "cypress run --env CI=true",
+    "lint:ts": "tsc -b jsconfig.json",
+    "start": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "yarn cypress run"
   },
   "keywords": [],
   "author": "Henrique Mergulhao",
